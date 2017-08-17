@@ -73,6 +73,8 @@ p {
     font-size: 16px;
 }
 
+/* buttons */
+
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -88,139 +90,47 @@ p {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  &:hover {
-    color: #333;
-    text-decoration: none;
-  }
+}
 
-  &.btn-add {
+.btn-primary {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74;
-    &:hover {
-      background-color: #204d74;
-      border-color: #122b40;
-    }
-  }
+    background-color: #3F51B5;
+    border-color: #1A237E;
+}
 
-  &.btn-remove {
+.btn-primary:hover {
+    background-color: #303F9F;
+}
+
+.btn-info {
     color: #fff;
-    background-color: #d9534f;
-    border-color: #d43f3a;
-    &:hover {
-      background-color: #c9302c;
-      border-color: #ac2925;
-    }
-  }
+    background-color: #388E3C;
+    border-color: #1B5E20;
+}
 
-  &.active {
-    cursor: default;
-    background-color: #888;
-  }
+.btn-info:hover {
+    background-color: #2E7D32;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #F44336;
+    border-color: #B71C1C;
+}
+
+.btn-danger:hover {
+    background-color: #D32F2F;
 }
 
 
-section {
-    position: relative;
-    height: 530px;
-    width: 406px;
-}
-
-section h1 {
-    margin: 4px 30px 0 6px;
-    float: left;
-}
-
-
-.raiting {
-    padding: 3px 34px;
-}
-
-.raiting p {
-    position: relative;
-    top: 3px;
-    color: #666;
-}
-
-.score {
+.clearfix::after {
+    content: "";
     display: block;
-    margin-top: -6px;
-    text-align: center;
-    color: #b71c1c;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
-.games {
-    position: relative;
-    margin: 24px 0 20px;
-    height: 402px;
-    width: 402px;
-    border: 4px solid #757575;
-    border-radius: 6px;
-    box-shadow: 0 0 10px 2px #757575;
-}
-
-.blocks {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    float: left;
-    border: 2px solid #ddd;
-    border-radius: 1px;
-    background-color: #fff;
-    transition: background-color .3s;
-}
-
-div.snake {
-    background-color: green;
-}
-
-div.food {
-    background-color: blue;
-}
-
-div.over {
-    background-color: red;
-}
-
-#superfood {
-    background-color: #ff9800;
-    -webkit-animation: superfood 1s linear infinite; 
-    animation: superfood 1s linear infinite;
-    opacity: 0.4;
-}
-
- @-webkit-keyframes superfood { 
-    0% {opacity: 1};
-    50% {opacity: 0.5};
-    100% {opacity: 1}; 
-}
-
-@keyframes superfood { 
-    0% {opacity: 1};
-    50% {opacity: 0.5};
-    100% {opacity: 1}; 
-}
-
-.footer {
-    position: relative;
-    bottom: 0;    
-}
-
-.footer a {
-    padding: 0 25px;
-    color: #607d8b;
-    text-decoration: underline;
-    font: 400 18px HelveticaNeueCyr-Light;
-}
-
-.footer a:hover {
-    color: #263238;
-}
-
-@media all and (max-width: 677px) and (orientation : landscape) {
-    body {
-        min-width: 500px;
-        min-height: 200px;
-        transform: scale(0.5);
-    }
+.pull-right {
+    float: right;
 }
