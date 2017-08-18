@@ -4,7 +4,7 @@ import Game   from  './core/game/Game';
 import Footer from  './common/footer/Footer';
 
 
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {

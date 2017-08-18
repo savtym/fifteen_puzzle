@@ -1,0 +1,31 @@
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content .close {
+    cursor: pointer;
+}
+
+.modal-body table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.modal-body th,
+.modal-body td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body tbody tr:hover {
+    background: #ddd;
+}
+
+
+@media all and (max-width: 479px) {
+    .ReactModal__Content.ReactModal__Content--after-open {
+        width: 270px !important;
+    }
+}
